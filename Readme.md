@@ -17,8 +17,8 @@
 ### 🔹 Clone the Repository
 
 ```sh
-git https://github.com/yeaminstudent5598/task-king-client-side.git
-cd Task-Management
+git https://github.com/yeaminstudent5598/task-king-server-side.git
+cd task-king-server-side
 ```
 
 ### 📌 Backend Setup
