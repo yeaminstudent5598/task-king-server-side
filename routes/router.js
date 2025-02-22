@@ -14,12 +14,12 @@ const router = express.Router();
 router.post(`/auth/token/new`, createAccesToken);
 
 //  Task Managment
-router.post(`/task/new`, verifyAccessToken, createNewTask); // Create a new Task
-router.get(`/task/get/:id`, verifyAccessToken, getTaskById); // Get Task Data
-router.put(`/task/update/:id`, verifyAccessToken, updateTask); // Update task data
-router.get(`/tasks/all`, verifyAccessToken, getAllTasks); // Get All Tasks
-router.put(`/taks/update/many`, verifyAccessToken, updateTasksMany); // Update takss many
-router.delete(`/tasks/delete`, verifyAccessToken, deleteTask);
+router.post(`/task/new`,  createNewTask); // Create a new Task
+router.get(`/task/get/:id`,  getTaskById); // Get Task Data
+router.put(`/task/update/:id`,  updateTask); // Update task data
+router.get(`/tasks/all`,  getAllTasks); // Get All Tasks
+router.put(`/taks/update/many`,  updateTasksMany); // Update takss many
+router.delete(`/tasks/delete`,  deleteTask);
 
 // Default
 router.get("*", (req, res) => {

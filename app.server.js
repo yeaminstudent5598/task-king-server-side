@@ -14,7 +14,7 @@ const port = process.env.PORT;
 // Middlewares
 app.use(
   cors({
-    origin: process.env.CORD_ORIGIN?.split(" "),
+    origin:"http://localhost:5173",
     credentials: true,
   })
 );
