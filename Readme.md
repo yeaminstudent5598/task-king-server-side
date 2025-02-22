@@ -1,26 +1,43 @@
-# Task Management App - Backend
+**Backend:**
 
-This is the backend API for the Task Management Application built with **Express.js** and **MongoDB**. It handles CRUD operations for tasks, user authentication via Firebase, and ensures real-time syncing of tasks with the frontend.
+- Node.js + Express.js
+- MongoDB (via `mongodb` package)
+- **Real-time Sync**: WebSockets / Change Streams
 
-## Features:
-- **User Authentication**: Firebase Authentication with Google sign-in.
-- **Task Management**: CRUD operations (Create, Read, Update, Delete) for tasks.
-- **Categories**: Tasks are categorized into "To-Do", "In Progress", and "Done".
-- **Real-time Sync**: Updates the frontend instantly when changes are made to tasks (via MongoDB Change Streams or WebSockets).
+---
 
-## Live Link:
-[Backend API Documentation](http://your-live-backend-link.com)
+## 📥 Installation
 
-## Dependencies:
-- **Express.js**: 4.17.1
-- **MongoDB**: 4.4.x
-- **Mongoose**: 5.10.9
-- **Firebase Admin SDK**: 9.0.0
-- **cors**: 2.8.5
-- **dotenv**: 8.2.0
-- **cookie-parser**: 1.4.5
+### 🔧 Prerequisites
 
-## Installation Steps:
-1. Clone this repository.
-   ```bash
-   git clone https://github.com/yourusername/task-management-app-backend.git
+- Install **Node.js** (>=16)
+- Install **MongoDB** (if running locally)
+- Install **Git**
+
+### 🔹 Clone the Repository
+
+```sh
+git https://github.com/yeaminstudent5598/task-king-client-side.git
+cd Task-Management
+```
+
+### 📌 Backend Setup
+
+1. **Navigate to the server directory**:
+   ```sh
+   cd server
+   ```
+2. **Install dependencies**:
+   ```sh
+   npm install
+   ```
+3. **Create a `.env` file** and add your MongoDB credentials:
+   ```env
+   USER_DB=your-mongo-db-name
+   USER_PASS=your-mongo-db-password
+   ```
+4. **Start the backend server**:
+   ```sh
+   npm start
+   ```
+   The API should now be running on `http://localhost:5000`
